@@ -1,0 +1,343 @@
+body {
+    background-color: #F1EFEF;
+    font-family: 'Croissant One', serif;
+    font-family: 'Roboto', sans-serif;
+    /* regla css, feunte externa desde google fonts */
+}
+
+nav {
+    background-color: #5a5656;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    display: flex;
+    margin-right: auto;
+}
+
+.portada {
+    /*CAJA DE PORTADA*/
+    background-image: url(../imagenes/portada.jpg);
+    /* caja de portada */
+    background-size: cover;
+    margin-top: 70px;
+    height: 400px;
+}
+
+h1 {
+    color: #F1EFEF;
+    /* nombre  del nav */
+    font-family: 'Croissant One', serif;
+    font-family: 'Roboto', sans-serif;
+    /* regla css, feunte externa desde google fonts */
+
+}
+
+h1:hover {
+    /* esto es para la transcición de los botones*/
+    color: aqua;
+}
+
+h3 {
+    /* titulo de la colección */
+    color: magenta;
+}
+
+.parrafoPresentacion {
+    /* parrafos de la caja de portada*/
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+ul {
+    /*BOTONES DE INICIO*/
+    display: flex;
+    list-style: none;
+
+}
+
+.itemNav {
+    /* botones de inicio */
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+}
+
+.linkNav {
+    /* botones de inicio */
+    color: #F1EFEF;
+    text-decoration: none;
+}
+
+.linkNav:hover {
+    /* botones de inicio */
+    color: aqua;
+}
+
+.contenedorPrincipal {
+    border: 5px solid black;
+    margin: auto;
+    background-color: #EBE4D1;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: #5a5656;
+    transition: 200px;
+}
+
+.cajaContenedora {
+    width: 100px;
+    /* Define el ancho deseado para los contenedores secundarios */
+    margin: 10px;
+    /* Espacio entre los contenedores secundarios */
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #ccc;
+    /* Un borde opcional */
+    padding: 20px;
+    /* Espacio interno opcional */
+    display: inline-block;
+    /* Para que los contenedores se muestren en línea */
+}
+
+.imagenContenedor {
+    width: 150px;
+    height: 170px;
+    margin: 50px;
+    border: 5px solid #191717;
+    object-fit: cover;
+}
+
+.contenedorTitulo {
+    color: black;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    color: black;
+    justify-content: center;
+    margin: 5px;
+    display: flex;
+}
+
+.button:hover {
+    color: aqua;
+    border-radius: 100px;
+    transform: scale(2);
+}
+
+.contenedorGrilla {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 16px;
+    grid-row-gap: 10px;
+    margin-bottom: 50px;
+    margin: 10px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-size: cover;
+
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.div3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div4 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div5 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div6 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.div7 {
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.div8 {
+    grid-area: 6 / 1 / 7 / 3;
+}
+
+.imaGrilla {
+    width: 100%;
+}
+
+.iconoWp {
+    color: rgb(13, 197, 7);
+    font-size: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.callP {
+    color: #F1EFEF;
+}
+
+.Callp:hover {
+    color: aqua;
+}
+
+.iconoTwitter {
+    color: #F1EFEF;
+}
+
+.iconoTwitter:hover {
+    color: aqua;
+}
+
+.iconoFace {
+    color: #F1EFEF;
+
+}
+
+.iconoFace:hover {
+    color: aqua;
+}
+
+.iconoInst {
+    color: #F1EFEF;
+}
+
+.iconoInst:hover {
+    color: aqua;
+}
+
+.iconoMap {
+    color: #F1EFEF;
+}
+
+.iconoMap:hover {
+    color: aqua;
+}
+
+.iconoMail {
+    color: #F1EFEF;
+}
+
+.iconoMail:hover {
+    color: aqua;
+}
+
+.miBarra {
+    color: blue
+}
+
+.carousel {
+    height: 800px;
+}
+
+.card {
+    width: 200px;
+    border: 2px solid orange;
+    margin: 20px;
+    border-radius: 0px;
+}
+
+.btn {
+    background-color: orange;
+}
+
+.button:hover {
+    background-color: aqua;
+    color: #a00a0a;
+}
+
+.section {
+    flex-direction: column;
+}
+
+footer {
+    background-color: #5a5656;
+    /* pie de pagina */
+    display: grid;
+}
+.imagenFooter{
+    height: 70px;
+    max-width: 100%;
+    height: auto;
+}
+.cajadeContacto{
+    background-color: #5a5656;
+}
+.creador{
+    background-color: beige;
+}
+
+
+
+@media (max-widht:922px) {
+    footer {
+        background-color: #5a5656;
+        /* pie de pagina */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Dos columnas de igual ancho */
+        grid-gap: 20px;
+        /* Espacio entre las dos secciones */
+    }
+
+    .imagenFooter {
+        max-width: 100%;
+    }
+
+    .contenedorGrilla {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 2fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 4 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div3 {
+        grid-area: 2 / 2 / 5 / 3;
+    }
+
+    .div4 {
+        grid-area: 5 / 2 / 6 / 3;
+    }
+
+    .div5 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .div6 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .div7 {
+        grid-area: 6 / 1 / 7 / 3;
+    }
+}
