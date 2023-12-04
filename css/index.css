@@ -360,30 +360,28 @@ h10 {
     max-width: cover;
 }
 
-@media (max-widht:800px) {
+@media only screen and (max-width: 576px) {
+    .padreNav{
+        display: flex;
+        flex-wrap: wrap;
+    }
     footer {
         background-color: #5a5656;
         /* pie de pagina */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* Dos columnas de igual ancho */
-        grid-gap: 20px;
-        /* Espacio entre las dos secciones */
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .imagenFooter {
         max-width: 100%;
     }
-
-
 /*aca comienza la grilla*/
 .parent {
-    display: none;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 6px;
-    grid-row-gap: 8px;
-    justify-content: space-between;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagenGrilla{
+    width: 350px;
+    height: 350px;
 }
 }
