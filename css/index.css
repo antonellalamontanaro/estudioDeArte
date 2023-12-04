@@ -182,7 +182,7 @@ h3 {
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
     transform-style: preserve-3d;}
-
+/*icono de whatsapp*/
 .iconoWp {
     color: rgb(13, 197, 7);
     font-size: 70px;
@@ -191,7 +191,7 @@ h3 {
     bottom: 50px;
     right: 50px;
 }
-
+/*icono telefono*/
 .callP {
     color: #F1EFEF;
     font-size: 30px;
@@ -202,7 +202,7 @@ h3 {
 .callP:hover {
     color: aqua;
 }
-
+/*icono twitter*/
 .iconoTwitter {
     color: #F1EFEF;
     font-size: 30px;
@@ -213,7 +213,7 @@ h3 {
 .iconoTwitter:hover {
     color: aqua;
 }
-
+/*icono facebook*/
 .iconoFace {
     color: #F1EFEF;
     font-size: 30px;
@@ -225,7 +225,7 @@ h3 {
 .iconoFace:hover {
     color: aqua;
 }
-
+/*icono instegram*/
 .iconoInst {
     color: #F1EFEF;
     font-size: 30px;
