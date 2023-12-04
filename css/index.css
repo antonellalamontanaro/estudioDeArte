@@ -91,6 +91,7 @@ ul {
     box-shadow: #5a5656;
     transition: 200px;
 }
+
 .card {
     width: 200px;
     border: 2px solid orange;
@@ -101,7 +102,7 @@ ul {
 
 .btn {
     background-color: orange;
-     margin-left: 55px;
+    margin-left: 55px;
 }
 
 .btn:hover {
@@ -162,21 +163,31 @@ h3 {
 /*aca comienza la grilla*/
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 15px;
-    }
-    
-    .div1  { grid-area: 1 / 1 / 6 / 3; }
-    .div2 { grid-area: 1 / 3 / 4 / 5; }
-    .div3 { grid-area: 4 / 3 / 6 / 5; }
-    .div4 { grid-area: 1 / 5 / 6 / 6; 
-    }
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 8px;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.div1 { grid-area: 1 / 1 / 3 / 3; }
+.div2 { grid-area: 1 / 3 / 3 / 5; }
+.div3 { grid-area: 3 / 1 / 5 / 3; }
+.div4 { grid-area: 3 / 3 / 5 / 5; }
+
+/*aca comienza las imagenes de grilla. mas el efecto*/
+.imagenGrilla:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;}
+
 .iconoWp {
     color: rgb(13, 197, 7);
     font-size: 70px;
-    position: fixed;z-index:2;
+    position: fixed;
+    z-index: 2;
     bottom: 50px;
     right: 50px;
 }
@@ -260,70 +271,91 @@ h3 {
 .section {
     flex-direction: column;
 }
+
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-  grid-gap: 20px; /* Espacio entre las dos secciones */
-  padding: 20px; /* Añade un relleno alrededor del contenido del footer */
-  background-color: black; /* Color de fondo para el footer */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas de igual ancho */
+    grid-gap: 20px;
+    /* Espacio entre las dos secciones */
+    padding: 20px;
+    /* Añade un relleno alrededor del contenido del footer */
+    background-color: black;
+    /* Color de fondo para el footer */
 }
 
 .section1 {
-  text-align: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
 
 }
 
 .section2 {
-display: flex;
-flex-direction: column;
-  align-items: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra el contenido horizontalmente */
 }
 
 .imagenFooter {
-  max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+    max-width: 100%;
+    /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
 }
 
 .contacto {
-  color: #333; /* Color del texto */
+    color: #333;
+    /* Color del texto */
 }
 
 .cajadeContacto {
-  margin-top: 10px; /* Margen superior para separar del título 'contactanos' */
+    margin-top: 10px;
+    /* Margen superior para separar del título 'contactanos' */
 }
 
 .creador {
-  grid-column: span 2; /* Ocupa ambas columnas */
-  text-align: center; /* Centra el contenido horizontalmente */
-  margin-top: 20px; /* Margen superior para separar del contenido anterior */
-  font-size: 12px; /* Tamaño del texto para el aviso de derechos reservados */
-  color: #666; /* Color del texto */
+    grid-column: span 2;
+    /* Ocupa ambas columnas */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin-top: 20px;
+    /* Margen superior para separar del contenido anterior */
+    font-size: 12px;
+    /* Tamaño del texto para el aviso de derechos reservados */
+    color: #666;
+    /* Color del texto */
 }
 
-h5{
+h5 {
     color: azure;
 }
-.cajadeContacto{
+
+.cajadeContacto {
     background-color: black;
 }
-.cajadeArtistas{
 
-}
-h6{
+.cajadeArtistas {}
+
+h6 {
     color: azure;
 }
-h7{
+
+h7 {
     color: azure;
 }
-h8{
+
+h8 {
     color: azure;
 }
-h9{
+
+h9 {
     color: azure;
 }
-h10{
+
+h10 {
     color: azure;
 }
-.creador{
+
+.creador {
     background-color: azure;
     padding: 10px;
     max-width: cover;
@@ -351,10 +383,21 @@ h10{
         grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 8px;
         grid-row-gap: 15px;
-        }
-        
-        .div1 { grid-area: 1 / 1 / 6 / 3; }
-        .div2 { grid-area: 1 / 3 / 4 / 5; }
-        .div3 { grid-area: 4 / 3 / 6 / 5; }
-        .div4 { grid-area: 1 / 5 / 6 / 6; }
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 6 / 3;
+    }
+
+    .div2 {
+        grid-area: 1 / 3 / 4 / 5;
+    }
+
+    .div3 {
+        grid-area: 4 / 3 / 6 / 5;
+    }
+
+    .div4 {
+        grid-area: 1 / 5 / 6 / 6;
+    }
 }
