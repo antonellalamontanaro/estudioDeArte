@@ -364,6 +364,14 @@ h10 {
     .padreNav{
         display: flex;
         flex-wrap: wrap;
+        height: 100px;
+    }
+    #imagenLogoBarra{
+        width: 70px;
+        height: 60px;
+    }
+    #tituloBarra{
+        margin-top: 10px;
     }
     footer {
         background-color: #5a5656;
